@@ -1,53 +1,61 @@
-div:hover {
-    border-style: solid;
-    border: 1px solid gray;
+.frases-ordenadas {
+    background-color: yellow; 
 }
 
-div:nth-of-type(1) {
+ol.frases-ordenadas li:nth-of-type(odd) {
+    text-transform: uppercase;
+}
+ol.frases-ordenadas li:nth-of-type(even) {
+    color : green
+}
+
+
+h1, h3 {
     color: red;
 }
+h1 em , h3 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
 
-div:nth-of-type(2) {
+
+li { 
+    font-size: 20px;
+}
+li em {
+    font-weight: 600;
+}
+
+.frases-ordenadas#programacao li:not(:nth-of-type(n + 4)){
+    color: blue;
+}
+
+.frases-ordenadas#programacao [li*="Java*"] {
+    background-color: pink;
+}
+
+
+#aliados li a:hover {
+    font-weight: 700;
+  }
+
+  #aliados li a[href*="stackoverflow"] {
     color: orange;
-}
+  }
 
-div:nth-of-type(3) {
-    color: yellow;
-    height: 100px;
-}
+  #aliados li a[href*="w3s"] {
+    color: green;
+  }
 
-div:nth-of-type(4) {
-    color: darkblue;
-}
+  #aliados li a[href*="mdn"] {
+    color: red;
+  }
 
-div:nth-of-type(5) {
-    color: cyan;
-}
+  #aliados li a[href*="devdocs"] {
+    color: pink;
+  }
 
-
-div:nth-of-type(1) > h3 {
-    background-color: antiquewhite
-}
-
-
-div:nth-of-type(2) > h3 {
-    background-color: yellow;
-}
-
-div:nth-of-type(3) > h3 {
-    background-color: orange;
-}
-
-div:nth-of-type(4) > h3 {
-    background-color: cyan;
-}
-
-div:nth-of-type(5) > h3 {
-    background-color: darkblue;
-}
-
-div:nth-of-type(2n+1) {
-    font-style: italic;
-}
-
+  #aliados li a[href*="trybe"] {
+    color: greenyellow;
+  }
 
