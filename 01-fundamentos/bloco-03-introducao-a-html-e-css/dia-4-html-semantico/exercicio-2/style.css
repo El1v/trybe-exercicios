@@ -1,0 +1,45 @@
+body{
+    background-color: antiquewhite;
+    display : flex;
+    margin : 10px;
+}
+
+#header {
+    background-color: beige;
+}
+
+.nav-link li {
+    display: inline;
+}
+
+.artigo {
+    background-color: beige;
+    border: 3px solid yellow;
+}
+
+#aside {
+    border: 3px solid rebeccapurple;
+    padding: 10px;
+    
+
+}
+
+
+#footer {
+    border: 3px solid blue;
+    padding: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.imagem{
+    width: 200px;
+}
