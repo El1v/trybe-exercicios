@@ -1,0 +1,56 @@
+    h1 {
+    text-align: center;
+    }
+
+    h3 {
+    margin-left: 185px;
+    }
+
+    #posicao ul{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        list-style: none;      
+    }
+
+
+    #premiacao h3 , #premiacao ul {
+        float: none;
+        text-align: center; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+ 
+  .first {
+    background-color: rgb(235, 200, 84);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+  }
+
+  .second {
+    background-color: rgb(219, 219, 219);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+
+    display: inline-block;
+  }
+
+  .third {
+    background-color: rgb(170, 142, 106);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+
+    display: inline-block;
+
+  }
