@@ -16,6 +16,8 @@ html , body{
 }
 
 #header {
+    background-image: url("mar.jpg");
+    background-size: cover;
     background-color: beige;
     grid-column: 1/3;
     grid-row: 1/2;
@@ -47,10 +49,19 @@ table, th ,td{
 }
 
 
-.nav-link li {
-    display: inline;
-}
+.button{
+    background-color: #4682B4;
+    color: #ADD8E6;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    text-align: center;
 
+
+}
 
 .imagem{
     width: 15%;
