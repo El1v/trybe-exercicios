@@ -12,7 +12,6 @@ html , body{
      grid-template-columns: 85% 15%;
      grid-template-rows: 20% 75% 5%;
      grid-gap: 10px;
-
 }
 
 #header {
