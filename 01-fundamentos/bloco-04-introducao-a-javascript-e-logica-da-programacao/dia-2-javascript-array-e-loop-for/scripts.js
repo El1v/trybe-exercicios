@@ -49,15 +49,15 @@ console.log("A soma total é : " , soma);*/
 
 //exercicio 5 rocket
 
-// let maiorNumero = numbers[0];
+let maiorNumero = numbers[0];
 
-// for(let index = 0; index < numbers.length; index += 1){
+for(let index = 0; index < numbers.length; index += 1){
 
-//   if(numbers[index] > maiorNumero){
-//     maiorNumero = numbers[index];
-//   }
-// }
-// console.log ("Maior numero : " , maiorNumero);
+  if(numbers[index] > maiorNumero){
+    maiorNumero = numbers[index];
+  }
+}
+console.log ("Maior numero : " , maiorNumero);
 
 //exercicio 6
 
