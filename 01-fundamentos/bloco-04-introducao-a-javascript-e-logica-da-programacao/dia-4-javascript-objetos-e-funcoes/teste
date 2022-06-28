@@ -1,0 +1,49 @@
+// Desafio 11
+function generatePhoneNumber(numeros) {
+  // seu código aqui
+  let deuRuim = false;
+  let resultado = "";
+
+
+  //if para verificar se o numero no array é igual a 11
+  if (numeros.length === 11) {
+    //for para verificar se o numero é repetido mais de 3x
+    for (let index = 0; index < numeros.length; index += 1) {
+      let cont = 0;
+
+      for (let index2 = 0; index2 < numeros.length; index2 += 1) {
+        if (numeros[index] === numeros[index2]) {
+          cont += 1;
+        }
+      }
+      //if para verificar se cada numero do index foi repetido 3x ou mais, se é maior que 9 e menor que 0
+      if (cont >= 3 || numeros[index] > 9 || numeros[index] < 0) {
+        deuRuim = true;
+        resultado =
+          "não é possível gerar um número de telefone com esses valores";
+          console.log(cont, 'cont' , deuRuim);
+      }
+    }
+
+  }else{
+    resultado = "Array com tamanho incorreto.";
+    deuRuim = true;
+  }
+
+  console.log('deuruim' , deuRuim);
+
+  if(deuRuim === false){
+    console.log("ta entrando aqi?");
+
+    numeros.splice(7, 0, '-');
+    numeros.splice(2, 0, ')');
+    numeros.splice(3, 0, ' ');
+    numeros.splice(0, 0, '(');
+    resultado = (numeros.join(''));
+
+  }
+
+  return resultado;
+}
+
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));
