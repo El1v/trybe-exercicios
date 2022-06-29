@@ -116,3 +116,7 @@ tagMain.removeChild(sectionLeft);
 //4
 
 tagSectionRight.style.marginRight = 'auto';
+
+//5
+
+tagSection.style.backgroundColor = 'green';
