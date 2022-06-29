@@ -100,3 +100,9 @@ for(let index = 0; index < 3; index += 1){
 //1
 
 tagH1.classList.add('title');
+
+//2
+
+let todasH3 = document.querySelectorAll('main h3');
+
+todasH3.classList.add('description');
