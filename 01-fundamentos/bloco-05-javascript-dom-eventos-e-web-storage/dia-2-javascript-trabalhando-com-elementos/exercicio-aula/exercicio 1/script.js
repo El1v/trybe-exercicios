@@ -17,3 +17,11 @@ tagMain.classList.add('main-content');
 body.appendChild(tagMain);
 
 //Exercicio 3
+
+let main = document.getElementsByClassName('main-content');
+
+let tagSection = document.createElement('section');
+
+tagSection.classList.add('center-content');
+
+main[0].appendChild(tagSection);
