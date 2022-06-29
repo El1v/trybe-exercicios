@@ -105,4 +105,8 @@ tagH1.classList.add('title');
 
 let todasH3 = document.querySelectorAll('main h3');
 
-todasH3.classList.add('description');
+for(let index = 0; index < todasH3.length; index +=1){
+    todasH3[index].classList.add('description');
+}
+
+//3
