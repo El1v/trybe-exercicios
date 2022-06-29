@@ -86,3 +86,10 @@ for(let index = 0; index < listaArray.length; index += 1){
 
 }
 
+//Exercicio 9
+
+for(let index = 0; index < 3; index += 1){
+
+    let tagH3 = document.createElement('h3');
+    main[0].appendChild(tagH3);
+}
