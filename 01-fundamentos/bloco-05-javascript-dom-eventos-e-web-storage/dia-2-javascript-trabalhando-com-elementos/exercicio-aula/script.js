@@ -35,3 +35,40 @@ let e7 = document.querySelector('#elementoOndeVoceEsta').nextSibling.nextElement
 
 let e8 = document.querySelector('#pai').lastElementChild.previousElementSibling;
 
+//PARTE 2
+
+//1
+
+let paiOndeVoceEsta = document.getElementById("pai");
+
+let elementoOndeVoceEstaBrother = document.createElement('section');
+
+elementoOndeVoceEstaBrother.id = 'elementoOndeVoceEstaBrother';
+
+paiOndeVoceEsta.appendChild(elementoOndeVoceEstaBrother);
+
+//2
+
+let pai = document.getElementById('elementoOndeVoceEsta');
+
+let elementoOndeVoceEstaFilho = document.createElement ('section');
+
+elementoOndeVoceEstaFilho.id = 'elementoOndeVoceEstaFilho';
+
+pai.appendChild(elementoOndeVoceEstaFilho);
+
+//3
+
+let filhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+
+let filhoDoPrimeiroFilho = document.createElement('section');
+
+filhoDoPrimeiroFilho.id = ('filhoDoPrimeiroFilho');
+
+filhoDoFilho.appendChild(filhoDoPrimeiroFilho);
+
+//4
+
+let eFIlho = document.querySelector('#filhoDoPrimeiroFilho').parentNode.parentNode.parentNode.lastChild.previousElementSibling.previousElementSibling;
+
+
