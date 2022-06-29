@@ -36,3 +36,11 @@ tagP.innerText = 'Algum texto';
 
 section.appendChild(tagP);
 
+//Exercicio 5
+
+let tagSectionLeft = document.createElement('section');
+
+tagSectionLeft.classList.add('left-content');
+
+main[0].appendChild(tagSectionLeft);
+
