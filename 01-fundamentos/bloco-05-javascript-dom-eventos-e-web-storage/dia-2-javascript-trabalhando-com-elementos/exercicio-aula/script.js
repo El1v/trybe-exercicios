@@ -71,4 +71,8 @@ filhoDoFilho.appendChild(filhoDoPrimeiroFilho);
 
 let eFIlho = document.querySelector('#filhoDoPrimeiroFilho').parentNode.parentNode.parentNode.lastChild.previousElementSibling.previousElementSibling;
 
+//PARTE 3
+
+// let paiDoPai = document.getElementById('paiDoPai') ;
+
 
