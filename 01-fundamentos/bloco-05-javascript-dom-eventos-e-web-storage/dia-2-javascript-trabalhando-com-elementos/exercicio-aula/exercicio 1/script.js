@@ -110,3 +110,7 @@ for(let index = 0; index < todasH3.length; index +=1){
 }
 
 //3
+
+tagMain.removeChild(sectionLeft);
+
+//4
