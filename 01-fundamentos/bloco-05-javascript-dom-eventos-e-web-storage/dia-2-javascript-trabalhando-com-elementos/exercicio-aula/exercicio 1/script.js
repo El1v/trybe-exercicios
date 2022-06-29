@@ -25,3 +25,14 @@ let tagSection = document.createElement('section');
 tagSection.classList.add('center-content');
 
 main[0].appendChild(tagSection);
+
+//Exercicio 4
+
+let section = document.querySelector('.main-content section');
+
+let tagP = document.createElement('p');
+
+tagP.innerText = 'Algum texto';
+
+section.appendChild(tagP);
+
