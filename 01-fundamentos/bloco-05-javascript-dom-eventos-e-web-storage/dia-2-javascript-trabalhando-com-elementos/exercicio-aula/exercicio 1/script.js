@@ -44,3 +44,10 @@ tagSectionLeft.classList.add('left-content');
 
 main[0].appendChild(tagSectionLeft);
 
+//Exercicio 6
+
+let tagSectionRight = document.createElement('section');
+
+tagSectionRight.classList.add('right-content');
+
+main[0].appendChild(tagSectionRight);
