@@ -114,3 +114,5 @@ for(let index = 0; index < todasH3.length; index +=1){
 tagMain.removeChild(sectionLeft);
 
 //4
+
+tagSectionRight.style.marginRight = 'auto';
