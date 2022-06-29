@@ -51,3 +51,13 @@ let tagSectionRight = document.createElement('section');
 tagSectionRight.classList.add('right-content');
 
 main[0].appendChild(tagSectionRight);
+
+//Exercicio 7
+
+let sectionLeft = document.querySelector('.main-content .left-content');
+
+let tagImg = document.createElement('img');
+
+tagImg.src = 'https://picsum.photos/200';
+
+sectionLeft.appendChild(tagImg);
