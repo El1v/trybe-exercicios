@@ -61,3 +61,28 @@ let tagImg = document.createElement('img');
 tagImg.src = 'https://picsum.photos/200';
 
 sectionLeft.appendChild(tagImg);
+
+//Exercicio 8
+
+let sectionRight = document.querySelector('.main-content .right-content');
+
+let tagUL = document.createElement('ul');
+
+sectionRight.appendChild(tagUL);
+
+let ul = document.querySelector('.main-content .right-content ul')
+
+let tagLI = document.createElement('li');
+
+
+let listaArray = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Sexto', 'Setimo', 'Oitavo', 'Nono', 'Decimo'];
+
+for(let index = 0; index < listaArray.length; index += 1){
+
+    let itemLista = listaArray[index];
+    let tagLI = document.createElement('li');
+    tagLI.innerText = itemLista;
+    ul.appendChild(tagLI);
+
+}
+
