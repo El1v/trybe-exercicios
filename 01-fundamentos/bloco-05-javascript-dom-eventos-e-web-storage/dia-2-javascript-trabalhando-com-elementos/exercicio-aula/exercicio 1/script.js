@@ -120,3 +120,8 @@ tagSectionRight.style.marginRight = 'auto';
 //5
 
 tagSection.style.backgroundColor = 'green';
+
+//6
+
+ul.lastChild.remove();
+ul.lastChild.remove();
