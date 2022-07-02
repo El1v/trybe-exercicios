@@ -1,0 +1,30 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.btn{
+    color: black;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: large;
+    border: 1px solid black;
+}
+
+.areaBotoes{
+
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.inclusao label, .inclusao input {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
