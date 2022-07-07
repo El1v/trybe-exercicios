@@ -1,55 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
     <title>Document</title>
-</head>
-<body>
-    <header class="header-title">
-        <h1>TrybeTrip</h1>
+  </head>
+  <body>
+    <header>
+      <h1 class="display-2 text-center">TrybeTrip</h1>
     </header>
 
-    <form action="" method="get" class="form">
-        <div class="form-content">
-            <div class="line-content">
-                <label for="name">Nome: <input type="text" name="name" id="input-name" min="10" max="40"></label>
-            </div>
-            <div class="line-content">
-                <label for="email">E-mail: <input type="email" name="email" id="input-email" min="10" max="50"> </label>
-            </div>
-            <div class="line-content">
-                <label for="city"> <input type="radio" name="destiny" value="city" id="radio-city">Cidade</label>
-                <label for="camp"> <input type="radio" name="destiny" value="camp" id="radio-camp">Campo</label>
-                <label for="beach"> <input type="radio" name="destiny" value="beach" id="radio-beach">Praia</label>
-                <label for="montain"> <input type="radio" name="destiny" value="montain" id="radio-montain">Montanhas</label>   
-            </div>
-            <div class="line-content">
-                <label for="textarea-why">
-                    Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip? 
-                    <br>
-                    <textarea name="why" id="" cols="30" rows="10" id="textarea-why" max="500"></textarea>
-                </label>
-            </div>
-            <div class="line-content">
-                <label for="date">Data: <input type="date" name="date" id="input-date"></label>
-            </div>
-            <div class="line-content">
-                <label for="news"><input type="checkbox" name="news" id="check-news" value="newsTrue">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe? </label>
-            </div>
-            <div class="line-content">
-                <label for="authorized"><input type="checkbox" name="authorized" id="check-authorized" value="authorizedTrue">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros. </label>
-            </div>
+    <main class="p-3 mb-2 bg-light text-dark">
+      <form action="" method="get" class="form">
+        <div>
+          <div class="row mb-3">
+            <label class="form-label" for="name">Nome: </label>
+            <input
+              class="form-control"
+              type="text"
+              name="name"
+              id="input-name"
+              min="10"
+              max="40"
+            />
+          </div>
+          <div class="row mb-3">
+            <label class="form-label" for="email">E-mail: </label>
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              id="input-email"
+              min="10"
+              max="50"
+            />
+          </div>
+
+          <fieldset>
+            <label class="form-label" for="tipo">Destino preferido</label>
+            <div></div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="destiny" value="city" id="radio-city" />
+            <label class="form-check-label" for="city">Cidade</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="destiny" value="camp" id="radio-camp" />
+            <label class="form-check-label" for="camp">Campo </label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="destiny" value="beach" id="radio-beach" />
+            <label class="form-check-label" for="beach">Praia</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="destiny" value="montain" id="radio-montain" />
+            <label class="form-check-label" for="montain">Montanha</label>
+          </div>
+
+        </fieldset>
+           
+            <div class="row mb-3 mt-3" >
+            <label class="form-label" for="textarea-why">
+              Por que você deveria ser a pessoa desenvolvedora a ganhar o
+              concurso TrybeTrip?</label>
+              <textarea class="form-control"
+                name="why"
+                id=""
+                cols="30"
+                rows="10"
+                id="textarea-why"
+                max="500"
+              ></textarea>
+          </div>
+
+          <div class="row mb-3">
+            <label class="form-label" for="date"> Data: </label>
+            <input class="form-control" type="date" name="date" id="input-date" />
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="news" id="check-news" value="newsTrue"/> 
+            <label class="form-check-label" for="news">Gostaria de receber outras incríveis oportunidades oferecidas
+              pela Trybe?</label>                        
+          </div>
+
+          <div class="form-check"> 
+            <input class="form-check-input" type="checkbox" name="authorized"  id="check-authorized" value="authorizedTrue" />
+            <label class="form-check-label" for="authorized">Concordo que imagens das minhas férias poderão ser usadas na
+              divulgação de concursos futuros.</label> 
+            </div>   
+                        
         </div>
 
-        <div class="form-button">
-            <button type="submit" class="btn" id="btn-submit">Enviar</button>
-            <button type="reset" class="btn" id="btn-clear">Apagar</button>
+        <div class="mt-3">
+          <button class="btn btn-dark me-5" type="submit" class="btn" id="btn-submit">Enviar</button>
+          <button class="btn btn-secondary" type="reset" class="btn" id="btn-clear">Apagar</button>
         </div>
-    </form>
+      </form>
+    </main>
 
+    <footer>
+      <p class="h3 text-center">Fim</p>
+    </footer>
+
+    <script src="dist/js/DatePickerX.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
