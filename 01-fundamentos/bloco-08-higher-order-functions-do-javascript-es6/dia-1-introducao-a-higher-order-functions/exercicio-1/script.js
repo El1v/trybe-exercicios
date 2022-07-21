@@ -1,6 +1,6 @@
 const person = (name) => {
   const emailLayout = name.toLowerCase().split(' ').join('_');
-  const email = `${emailLayout}@trybe.com`
+  const email = `${ema}@trybe.com`
   return {
     nome: name,
     email: email,
