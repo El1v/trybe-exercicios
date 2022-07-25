@@ -66,7 +66,7 @@ const books = [
 
 
 function formatedBookNames(array) {
-  return books.map((book) => {
+  return array.map((book) => {
     return `${book.name} - ${book.genre} - ${book.author.name}`
   })
 }
